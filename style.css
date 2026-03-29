@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #0f172a;
+  padding: 20px;
+}
+
+/* MAIN LAYOUT */
+.cv {
+  max-width: 900px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+}
+
+/* LEFT SIDE */
+.left {
+  background: linear-gradient(180deg, #6366f1, #8b5cf6);
+  color: white;
+  padding: 25px;
+  text-align: center;
+}
+
+/* PHOTO */
+.profile img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid white;
+  margin-bottom: 15px;
+}
+
+/* NAME */
+.left h1 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.left p {
+  font-size: 13px;
+  opacity: 0.9;
+}
+
+/* LEFT SECTIONS */
+.left-section {
+  margin-top: 25px;
+  text-align: left;
+}
+
+.left-section h3 {
+  font-size: 14px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+  padding-bottom: 4px;
+}
+
+.left-section p,
+.left-section li {
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+
+/* RIGHT SIDE */
+.right {
+  padding: 30px;
+}
+
+/* SECTION */
+.section {
+  margin-bottom: 20px;
+}
+
+.section h2 {
+  font-size: 18px;
+  color: #6366f1;
+  margin-bottom: 6px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 4px;
+}
+
+.section p {
+  font-size: 14px;
+  color: #374151;
+  line-height: 1.6;
+}
+
+/* LIST */
+.list {
+  padding-left: 18px;
+}
+
+.list li {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .cv {
+    grid-template-columns: 1fr;
+  }
+
+  .left {
+    text-align: center;
+  }
+}
